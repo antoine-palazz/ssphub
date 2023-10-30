@@ -18,4 +18,7 @@ if (!file.exists("dictionnaire_variables_logemt_2020.csv")){
 if (!file.exists("dictionnaire_variables_indcvi_2020.csv")){
     download.file(url_doc_individu, "dictionnaire_variables_indcvi_2020.csv")
 }
+
+# For Windows users, you may have to add (mode="wb") to the download.file call.
+# For more information, the documentation is available here: https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/download.file
 ```
